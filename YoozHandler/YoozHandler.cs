@@ -54,7 +54,8 @@ namespace YoozAI
 
             if (response is null)
             {
-                return "Not found";
+                response = blocks.FirstOrDefault(b => b.Request.Contains(request));
+                if (response is null) return "Not found";
             }
             return response.Response;
         }
