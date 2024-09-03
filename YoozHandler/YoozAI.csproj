@@ -4,6 +4,26 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>a handler for yooz AI markup language</Title>
+    <Authors>Seyyed Amirreza Hashemi</Authors>
+    <Description>it can parse and handle yooz markup blocks</Description>
+    <Copyright>By Seyyed Amirreza Hashemi </Copyright>
+    <RepositoryType>https://github.com/SARezaHashemi/YoozAI-CSharp</RepositoryType>
+    <PackageTags>csharp, ML, ML.Net</PackageTags>
+    <PackageReleaseNotes>it is the most basic version of yooz and it will be upgraded</PackageReleaseNotes>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>NugetReadme.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\NugetReadme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
