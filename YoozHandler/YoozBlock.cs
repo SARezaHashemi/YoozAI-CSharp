@@ -48,8 +48,6 @@ namespace YoozAI
 
             string specialCharacters = "()\\+-";
 
-            int startIndex = -1;
-            int endIndex = yoozBlock.Length;
             bool requestCompleted = false;
             bool requestStarted = false;
             bool notParse = false;
@@ -71,7 +69,6 @@ namespace YoozAI
                             }
                             else
                             {
-                                startIndex = i;
                                 completed = false;
                             }
                             break;
@@ -88,10 +85,8 @@ namespace YoozAI
                                 {
                                     throw new ArgumentException($"{nameof(yoozBlock)} is not in correct format");
                                 }
-                                endIndex = i;
                                 completed = true;
                             }
-                            i = yoozBlock.Length;
                             break;
                         case '\\':
                             if (notParse)
@@ -138,8 +133,6 @@ namespace YoozAI
                 {
                     blocks.Add(
                         new YoozBlock(request, response));
-                    startIndex = -1;
-                    endIndex = yoozBlock.Length;
                     requestCompleted = false;
                     notParse = false;
                     completed = false;

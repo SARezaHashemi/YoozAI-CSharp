@@ -6,9 +6,13 @@ string pattern = @"
     + سبحان الله همش گوشته
     - سبحان الله همینطوره، این نسخه تقدیم میشه به تمام نال ها و آقای اجاقی
     (
+    )
+    + سلام من نال هستم
+    - سلام وقتت بخیر نال عزیز
+    (
     ";
 
-string ask = "سبحان الله همش گوشته";
+string ask = "سلام من نال هستم";
 using (YoozHandler handler = new(pattern))
 {
     //as you know windows terminal doesn't support persian texts 
